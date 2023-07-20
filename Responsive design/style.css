@@ -1,0 +1,57 @@
+*{
+    box-sizing: content-box;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .logo {
+    width: 360px;
+    height: 120px;
+    background-color: blue;
+}
+.nav .menu {
+    width: 60rem;
+    height: 120px;
+    background-color: grey;
+}
+
+.hero-section {
+    width: 83rem;
+    height: 360px;
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards .card {
+    width: 460px;
+    height: 360px;
+    background-color: blue;
+    margin-right: 8px;
+}
+
+
+@media screen and (max-width: 640px){
+    .nav .menu {
+        margin-left: 10px;
+        width: 55rem;
+    }
+    .hero-section {
+        width: 593px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin-top: 10px;
+    }
+}
